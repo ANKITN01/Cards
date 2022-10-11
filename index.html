@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Animate Card</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card" style="bottom:30px">
+            <div class="content" id="cardOne" >
+                <h2>01</h2>
+                <h3>Card One</h3>
+                <img src="one.jpg" width="250px"  alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae et nobis sequi quis tenetur, sint pariatur itaque voluptate qui eaque officiis enim provident iure atque voluptatem, ratione perspiciatis obcaecati voluptatum?</p>
+                
+            </div>
+        </div>
+        <div class="card">
+            <div class="content" id="CardTwo">
+                <h2>02</h2>
+                <h3>Card Two</h3>
+                <img src="two.jpg" width="250px"  alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae et nobis sequi quis tenetur, sint pariatur itaque voluptate qui eaque officiis enim provident iure atque voluptatem, ratione perspiciatis obcaecati voluptatum?</p>
+            </div>
+        </div>
+        <div class="card" style="top:30px">
+            <div class="content" id="cardThree">
+                <h2>03</h2>
+                <h3>Card Three</h3>
+                <img src="three.jpg" width="250px"  alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae et nobis sequi quis tenetur, sint pariatur itaque voluptate qui eaque officiis enim provident iure atque voluptatem, ratione perspiciatis obcaecati voluptatum?</p>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 25,
+		speed: 400,
+        glare:true,
+        "max-glare":1,
+	});
+
+</script>
+</html>
